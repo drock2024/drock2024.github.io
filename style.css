@@ -5,7 +5,7 @@ body{
 }
 .bg{
     background: url(bg.jpg) no-repeat;
-    background-size: auto;
+    background-size: cover;
 }
 .box{
     width: 450px;
