@@ -13,26 +13,77 @@
         <!--Nav Bar-->
         <div class="w3-top">
             <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-                <a href="#home" class="w3-bar-item w3-button"><b>About</b> Me</a>
+                <a href="#home" class="w3-bar-item w3-button"><b>Derrick</b> Adams</a>
                 <div class="w3-right w3-hide-small">
-                    <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
+                    <a href="#gallery" class="w3-bar-item w3-button">Gallery</a>
+                    <a href="#projects" class="w3-bar-item w3-button">Projects</a>
                     <a href="#resume" class="w3-bar-item w3-button">Resume</a>
-                    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
                 </div>
 
             </div>
         </div>
+
         <!--About Me Section-->
-        <div class="box">
-            <img src="profile.jpg" alt="" class="box-img">
-            <h1>Derrick Adams</h1>
-            <h5>Georgia Tech Student</h5>
-            <p>Hi my name is Derrick Adams and I am a second year Computational Media major at Georgia Tech. My threads are Intelligence and Games, and I am also pursuing a minor in Film Studies. My main areas of interest and expertise are software development, digital art, and game design.</p>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/derrick-adams-23a7241b7/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.youtube.com/channel/UC9DMcWs4J7Lxn6hcrx86kfg"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
-                <li><a href="https://store.steampowered.com/search/?developer=Derrick%20Adams"><i class="fa fa-steam-square" aria-hidden="true"></i></a></li>
-            </ul>
+        <div class="bg">
+            <div class="box">
+                <img src="profile.jpg" alt="" class="box-img">
+                <h1>Derrick Adams</h1>
+                <h5>Georgia Tech Student</h5>
+                <p>Hi my name is Derrick Adams and I am a second year Computational Media major at Georgia Tech. My threads are Intelligence and Games, and I am also pursuing a minor in Film Studies. My main areas of interest and expertise are software development, digital art, and game design.</p>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/derrick-adams-23a7241b7/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCBsjCC9kgUd6JpYP1I0PJ7g"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
+                    <li><a href="https://store.steampowered.com/search/?developer=Derrick%20Adams"><i class="fa fa-steam-square" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="w3-content w3-padding" style="max-width:1564px">
+            <!-- Gallery Section -->
+            <div class="w3-container w3-padding-32" id="gallery">
+                <h3 class="w3-border-bottom w3-border-dark-grey w3-padding-16">Gallery</h3>
+            </div>
+            <div class="w3-row-padding w3-center">
+                <div class="w3-col m3">
+                  <img src="Empire.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Cubist digital drawing titled: Empire">
+                </div>
+            
+                <div class="w3-col m3">
+                  <img src="Mango digital painting flat.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Mango Still Life digital drawing">
+                </div>
+            
+                <div class="w3-col m3">
+                  <img src="SecondMandala.png   " style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Mandala">
+                </div>
+            
+                <div class="w3-col m3">
+                  <img src="generator.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Logo for a local band named Generator">
+                </div>
+              </div>
+              <!-- Modal for full size images on click-->
+                <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+                    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+                    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                    <img id="img01" class="w3-image">
+                    <p id="caption" class="w3-opacity w3-large"></p>
+                    </div>
+                </div>
+            <!-- Project Section -->
+            <div class="w3-container w3-padding-32" id="projects">
+                <h3 class="w3-border-bottom w3-border-dark-grey w3-padding-16">Coding Projects</h3>
+            </div>
+            <!-- Resume Section -->
+            <div class="w3-container w3-padding-32" id="resume">
+                <h3 class="w3-border-bottom w3-border-dark-grey w3-padding-16">Resume</h3>
+            </div>
         </div>
     </body>
+    <script>
+        // Modal Image Gallery
+        function onClick(element) {
+          document.getElementById("img01").src = element.src;
+          document.getElementById("modal01").style.display = "block";
+          var captionText = document.getElementById("caption");
+          captionText.innerHTML = element.alt;
+        }
+    </script>
 </html>

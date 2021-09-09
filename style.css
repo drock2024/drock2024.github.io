@@ -1,8 +1,11 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: whitesmoke;
+}
+.bg{
     background: url(bg.jpg) no-repeat;
-    background-size: cover;
+    background-size: auto;
 }
 .box{
     width: 450px;
