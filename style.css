@@ -5,10 +5,11 @@ body{
 }
 .bg{
     background: url(bg.jpg) no-repeat;
-    background-size: auto;
+    background-size: cover;
 }
 .box{
     width: 600px;
+    max-width: 100%;
     background: rgba(0, 0, 0, 0.4);
     padding: 40px;
     text-align: center;
