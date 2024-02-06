@@ -15,7 +15,7 @@
             <div class="w3-bar w3-white w3-wide w3-padding w3-card">
                 <a href="index.html#home" class="w3-bar-item w3-button"><b>Derrick</b> Adams</a>
                 <div class="w3-right w3-hide-small">
-                    <a href="BTR.html" class="w3-bar-item w3-button">Before The Rain</a>
+                    <!--<a href="BTR.html" class="w3-bar-item w3-button">Before The Rain</a>-->
                     <a href="Projects.html" class="w3-bar-item w3-button">Portfolio</a>
                     <a href="Resume.html" class="w3-bar-item w3-button">Resume</a>
                     <a href="CoverLetter.html" class="w3-bar-item w3-button">Cover Letter</a>
@@ -30,7 +30,7 @@
         <!-- Sidebar on small screens when clicking the menu icon -->
       <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
           <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close x</a>
-          <!--<a href="BTR.html" onclick="w3_close()" class="w3-bar-item w3-button">Before The Rain</a>-->
+         <!--<a href="BTR.html" onclick="w3_close()" class="w3-bar-item w3-button">Before The Rain</a>-->
           <a href="Projects.html" onclick="w3_close()" class="w3-bar-item w3-button">Portfolio</a>
           <a href="Resume.html" onclick="w3_close()" class="w3-bar-item w3-button">Resume</a>
           <a href="CoverLetter.html" onclick="w3_close()" class="w3-bar-item w3-button">Cover Letter</a>
@@ -39,11 +39,12 @@
         <!--About Me Section-->
         <div class="bg">
             <div class="box" id="home">
-                <h1>Before The Rain</h1>
-                <p>
-                    Before The Rain is a comic about a superhero named Paladin who uses his metallic powers to fight crime. 
-                    A mysterious new drug that gives people flame based powers named Apex gets dispersed through the criminal underworld and it is up to Colin to put an end to Apex’s destruction.
-                    Will he succeed in averting disaster or will his own hubris lead to him losing everything he loves?
+                <h1>Cover Letter</h1>
+                <p style="text-align: center;">
+                    <br>
+                    Phone Number: 949-423-4022
+                    <br>
+                    Email: drock2024@gmail.com
                 </p>
                 <ul>
                     <li><a href="https://www.linkedin.com/in/derrick-adams-23a7241b7/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
@@ -53,78 +54,15 @@
             </div>
         </div>
         <div class="w3-content w3-padding" style="max-width:1564px">
-<!-- Comic -->
-<div class="w3-container w3-padding-32" id="comic">
-    <h3 class="w3-border-bottom w3-border-dark-grey w3-padding-16">Read</h3>
-</div class>
-<!-- Slideshow container -->
-<div class="slideshow-container">
-
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-            <div class="numbertext">0 / 4</div>
-            <img src="images/BTR/Cover.png" style="width:100%">
+            <!-- Resume Section -->
+            <div class="w3-container w3-padding-32" id="resume">
+                <h3 class="w3-border-bottom w3-border-dark-grey w3-padding-16">Cover Letter</h3>
             </div>
-
-        <div class="mySlides fade">
-        <div class="numbertext">1 / 4</div>
-        <img src="images/BTR/Chp1pg1.png" style="width:100%">
-        </div>
-    
-        <div class="mySlides fade">
-        <div class="numbertext">2 / 4</div>
-        <img src="images/BTR/Chp1pg2new.png" style="width:100%">
-        </div>
-    
-        <div class="mySlides fade">
-        <div class="numbertext">3 / 4</div>
-        <img src="images/BTR/Chp1pg3.png" style="width:100%">
-        </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">4 / 4</div>
-            <img src="images/BTR/Chp1Pg4.png" style="width:100%">
+            <div>
+                <iframe style="width: 100%; height: 800px;" src="revisedcoverletter.pdf" frameborder="0"></iframe>
             </div>
-    
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-    <br>
-    
-    <!-- The dots/circles -->
-    <div style="text-align:center">
-    </div>
-        <script>
-            let slideIndex = 1;
-            showSlides(slideIndex);
+        </div>
 
-            // Next/previous controls
-            function plusSlides(n) {
-            showSlides(slideIndex += n);
-            }
-
-            // Thumbnail image controls
-            function currentSlide(n) {
-            showSlides(slideIndex = n);
-            }
-
-            function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";
-            dots[slideIndex-1].className += " active";
-            }
-        </script>
         <script>
             // Toggle between showing and hiding the sidebar when clicking the menu icon
             var mySidebar = document.getElementById("mySidebar");
