@@ -7,6 +7,14 @@ body{
     background: url(images/bg.jpg) no-repeat;
     background-size: cover;
 }
+.bg-proj{
+  background: url(images/thiefclip.gif) ;
+  background-size: contain;
+}
+.bg-res{
+  background: url(images/teleport.gif);
+  background-size:contain;
+}
 .box{
     width: 600px;
     max-width: 100%;
